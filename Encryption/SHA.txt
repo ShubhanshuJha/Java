@@ -1,0 +1,32 @@
+## Definition:
+In Cryptography, SHA is cryptographic hash function which takes input as 20 Bytes and rendered the hash value in hexadecimal number, 40 digits long approx.
+
+The SHA-2 family of cryptographic hash functions consists of six hash functions. These are:
+    SHA-224, with 224 bit hash values
+    SHA-256, with 256 bit hash values
+    SHA-384, with 384 bit hash values
+    SHA-512, with 512 bit hash values
+    SHA-512/224, with 512 bit hash values
+    SHA-512/256, with 512 bit hash values
+
+Among these, SHA-256 and SHA-512 are the most commonly accepted and used hash functions computed with 32-bit and 64-bit words, respectively. SHA-224 and SHA-384 are truncated versions of SHA-256 and SHA-512 respectively, computed with different initial values.
+To calculate cryptographic hashing value in Java, MessageDigest Class is used, under the package java.security.
+
+## Message Digest Class:
+To calculate cryptographic hashing value in Java, MessageDigest Class is used, under the package java.security.
+MessagDigest Class provides following cryptographic hash function to find hash value of a text as follows:
+    MD2
+    MD5
+    SHA-1
+    SHA-224
+    SHA-256
+    SHA-384
+    SHA-512
+
+These Algorithms are initialized in static method called getInstance(). After selecting the algorithm it calculate the digest value and return the results in byte array.
+
+BigInteger class is used, which converts the resultant byte array into its sign-magnitude representation. This representation is converted into hex format to get the MessageDigest.
+
+Application:
+    Cryptography
+    Data Integrity

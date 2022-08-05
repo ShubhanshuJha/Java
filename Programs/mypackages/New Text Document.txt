@@ -1,0 +1,2 @@
+1st Compile: javac packageSampleProgram.java
+Then Compile: javac -d packageSample packageSampleProgram.java
